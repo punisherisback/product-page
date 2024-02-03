@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 slider.style.transition = 'none';
                 slider.style.transform = `translateX(0)`;
                 counter = 0;
-            }, 500);
+            }, 1000);
         }
     }, 3000); // Change slide every 3 seconds (adjust as needed)
 });
