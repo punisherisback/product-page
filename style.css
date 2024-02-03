@@ -1,6 +1,7 @@
 /*color: #040D12 #183D3D #5C8374 #93B1A6;*/
 body{
     margin: 0%;
+    font-size: 18px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 
@@ -16,14 +17,18 @@ header{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
     padding: 3px;
-    
+    position:fixed;
+    z-index: 2;
     
 
 }
-.logo{
-   
+.logo{   
     margin: 5vw;
+}
 
+.options a:hover{
+    
+    border-bottom: 2px solid #93B1A6;
 }
 .search{
     display: flex;
@@ -70,7 +75,7 @@ header a{
 
 .slider {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.1s ease-in-out;
 }
 .sliderimage{
     object-fit:cover;
@@ -95,9 +100,9 @@ main{
 .productimage{
     height: 25vw;
     border: 1px solid #93B1A6;
-    
+   border-radius: 20px;
     position: relative;
-    
+    transition: transform 0.5s ease;
 }
 .productimage:hover{
     transform:scale(1.05);
@@ -111,20 +116,17 @@ main{
     align-items: center;
     width: 25vw;
 }
-.producttext:hover{
-    transform: scale(1.1);
-}
 
-.buybutton{
+.explorebutton{
     border: 2px solid #93B1A6;
     background-color: #040D12;
     color: #93B1A6;
-    padding: 18px;
+    
     width: 15vw;
 }
 
-.buybutton:hover{
-    box-shadow: 0 0 20px 5px #93b1a659;
+.explorebutton:hover{
+    
     color: #183D3D;
     background-color: #93B1A6;
 }
